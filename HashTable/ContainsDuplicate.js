@@ -1,5 +1,9 @@
-// Given an array of integers, find if the array contains any duplicates.
-// The function should return true if any value appears at least twice in the array else return false.
+/**
+ * Given an array of integers, find if the array contains any duplicates.
+ * The function should return true if any value appears at least twice in the array else return false.
+ * Since we are using modulo to generate hash in hash function, while creating hash remember to do Math.abs() on keys,
+   so that all the negative numbers get converted to positive.
+ */
 
 const containsDuplicate = function(nums) {
   let hashTable = new HashSet();
