@@ -13,4 +13,4 @@ const hasUniqueCharacters = function (input) {
     Array[val] = true;
   }
   return true;
-}
+};
