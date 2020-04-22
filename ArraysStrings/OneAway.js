@@ -4,6 +4,8 @@
 // First approach is cleaner while second is complex but with no duplicate code and is compact
 // You can chose whichever you want
 
+
+// Solution 1
 const oneAway1 = (string1, string2) => {
   if (string1.length === string2.length) {
     return oneEditReplace(string1, string2);
@@ -50,6 +52,8 @@ const oneEditInsert = (string1, string2) => {
   return true;
 };
 
+
+// Solution 2
 const oneAway2 = (string1, string2) => {
   // Check length
   if (Math.abs(string1.length - string2.length) > 1) {
